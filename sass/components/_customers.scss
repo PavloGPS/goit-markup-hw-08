@@ -1,0 +1,35 @@
+/* секція постійних клієнтів */
+.customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 30px;
+  }
+  /* картка клієнта */
+  .customer-card {
+    // flex-basis: calc(100% - 5 * 30px / 6);
+    @include flexbasis(5,30px);
+  }
+  /* посилання на сторінку клієнта */
+  .customer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    color: var(--s-icons-color);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+  
+    transition: color 250ms var(--timing-function);
+  }
+  /* логотип у посиланні */
+  .customer-logo {
+    fill: currentColor;
+  }
+  .customer-link:hover,
+  .customer-link:focus {
+    color: var(--accent-color);
+    border-color: currentColor;
+  }
+  

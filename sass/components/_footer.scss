@@ -1,0 +1,121 @@
+/* футер */
+.page-bottom {
+    padding: 60px 0;
+    background-color: var(--second-bg-color);
+  }
+  .page-bottom .container {
+    display: flex;
+    align-items: baseline;
+    gap: 92px;
+  }
+  
+  /* лого в футері , та адресса*/
+  .logo-light,
+  .direction {
+    color: var(--light-text-color);
+  }
+  /* шрифт в контейнері адресси*/
+  .superscription {
+    margin-top: 20px;
+  
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  .page-bottom > .superscription {
+    width: 231px;
+  }
+  
+  /* пошта й номер */
+  .superscription .contact.link {
+    color: var(--glassy-white-text);
+  }
+  /* анімація зміни кольору посилань в блоці контактів в футері   */
+  .superscription .link {
+    transition: color 250ms var(--timing-function);
+  }
+  
+  .direction:hover,
+  .page-bottom .contact:hover,
+  .direction:focus,
+  .page-bottom .contact:focus {
+    color: var(--accent-color);
+  }
+  .superscription.list .item:not(:first-child) {
+    margin-top: 9px;
+  }
+  /* группа посилань на соцмережі */
+  .s-links-title,
+  .pb-form-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    color: var(--light-text-color);
+  }
+  
+  .bottom-s-links {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  .bottom-s-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+  
+    border-radius: 50%;
+    color: var(--light-s-icon-color);
+    background-color: var(--dark-bg-icon-color);
+  
+    transition: background-color 250ms var(--timing-function);
+  }
+  .page-bottom .s-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--light-s-icon-color);
+  }
+  .bottom-s-link:hover,
+  .bottom-s-link:focus {
+    background-color: var(--accent-color);
+  }
+  
+  /* форма підписки на розсилку */
+  
+  .pb-form-email {
+    margin-top: 20px;
+    height: 50px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .pb-email-input {
+    height: 50px;
+    min-width: 358px;
+    padding-left: 16px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+    color: var(--light-text-color);
+  
+    background-color: rgba(33, 150, 243, 0);
+  }
+  
+  .pb-submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    min-width: 200px;
+    padding: 10px 28px;
+    margin-top: 0;
+    margin-left: 12px;
+  }
+  .pb-submit-icon {
+    margin-left: 10px;
+    fill: #fff;
+  }

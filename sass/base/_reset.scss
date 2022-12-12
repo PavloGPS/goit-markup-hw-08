@@ -1,0 +1,25 @@
+/* Скидання стилів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+/* скидання стилів списку по замовчуванню */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* скидання стилів посилань по замовчуванню */
+.link {
+  text-decoration: none;
+  color: inherit;
+}

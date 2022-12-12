@@ -1,0 +1,101 @@
+.page-header {
+    border-bottom: 1px solid var(--header-underline-color);
+  }
+  .page-header .container {
+    display: flex;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .site-nav {
+    display: flex;
+    margin-left: 93px;
+    /* gap: 50px; */
+  }
+  
+  .contact.list .item:not(:last-child),
+  .site-nav.list .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  
+  /* стилі логотипу компанії */
+  
+  .logo {
+    color: var(--accent-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    text-transform: capitalize;
+    text-align: center;
+  }
+  /* лого в хедері */
+  .logo-dark {
+    color: var(--dark-text-color);
+  }
+  
+  /* навігація сайту */
+  
+  .site-nav.list .link,
+  .contact.list .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms var(--timing-function);
+  }
+  
+  .site-nav .link:hover,
+  .site-nav .link:focus,
+  .contact .link:hover,
+  .contact .link:focus,
+  .site-nav .link.current {
+    color: var(--accent-color);
+  }
+  
+  .site-nav .link.current {
+    position: relative;
+  }
+  
+  .site-nav .link.current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  
+    transform: translatey(1px);
+  
+    content: "";
+    height: 4px;
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+  /* .navigation .link,*/
+  .page-header .link {
+    display: inline-block;
+  }
+  .contact.list {
+    display: flex;
+    margin-left: auto;
+    /* gap: 50px; */
+  }
+  .site-nav .link {
+    color: var(--secondary-text-color);
+    text-transform: capitalize;
+  }
+  /* іконки біля kонтактів */
+  .contact.list .link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .icon.mail,
+  .icon.phone {
+    fill: currentColor;
+  }
+  

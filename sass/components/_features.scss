@@ -1,0 +1,36 @@
+/* ===========features start ==============================*/
+.features {
+  &__grid {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    // flex-basis: calc((100% - 3 * 30px) / 4);
+    @include flexbasis(4, 30px);
+  }
+}
+.features .thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background-color: var(--grey-bg-color);
+  border-radius: 4px;
+  // заголовок тумби
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-top: 30px;
+
+    color: var(--secondary-text-color);
+  }
+  // текст тумби
+  &__text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    margin-top: 10px;
+  }
+}
+

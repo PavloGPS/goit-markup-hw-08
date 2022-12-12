@@ -1,0 +1,37 @@
+// Utils styles
+
+// Змінні
+@import './utils/variables';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+
+// base styles
+
+// Основні стилі
+@import './base/base';
+
+//reset some defaults
+// скидання стилів
+@import './base/reset';
+
+// components styles
+
+// компоненти
+@import './components/section';
+@import './components/container';
+@import './components/header';
+@import './components/hero';
+@import './components/features';
+@import './components/work';
+@import './components/teammates';
+@import './components/customers';
+@import './components/footer';
+@import './components/portfolio';
+@import './components/modalwindow';
+
+
+
+
+
+
