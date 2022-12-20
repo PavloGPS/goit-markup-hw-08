@@ -87,9 +87,13 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
   /* Приховування логічного заголовку */
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 .section__title {
   color: var(--secondary-text-color);
@@ -99,9 +103,28 @@ img {
   text-align: center;
 }
 .container {
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: calc(100vw - 30px);
+  }
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .page-header {
@@ -290,15 +313,30 @@ img {
 }
 
 /* ===========features start ==============================*/
-.features__grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .features__grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
-.features__item {
-  -ms-flex-preferred-size: calc(100% - 22.5px);
-      flex-basis: calc(100% - 22.5px);
+@media screen and (min-width: 480px) {
+  .features__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features .thumb {
@@ -343,8 +381,8 @@ img {
   margin-top: 50px;
 }
 .work__item {
-  -ms-flex-preferred-size: calc(100% - 20px);
-      flex-basis: calc(100% - 20px);
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
   position: relative;
 }
 .work__overlay {
@@ -383,8 +421,8 @@ img {
   gap: 30px;
 }
 .teammates__card {
-  -ms-flex-preferred-size: calc(100% - 22.5px);
-      flex-basis: calc(100% - 22.5px);
+  -ms-flex-preferred-size: calc((100% - 90px) / 4);
+      flex-basis: calc((100% - 90px) / 4);
   text-align: center;
   background-color: var(--main-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -467,8 +505,8 @@ img {
 
 /* картка клієнта */
 .customer-card {
-  -ms-flex-preferred-size: calc(100% - 24px);
-      flex-basis: calc(100% - 24px);
+  -ms-flex-preferred-size: calc((100% - 120px) / 5);
+      flex-basis: calc((100% - 120px) / 5);
 }
 
 /* посилання на сторінку клієнта */

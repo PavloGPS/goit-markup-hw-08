@@ -3,5 +3,5 @@
 //@include flexbasis(4,30px);
 // 4= quantity of elements ; 30px space between (or gap) elements
 @mixin flexbasis($amount, $gap) {
-  flex-basis: calc(100% - (($amount - 1) * $gap) / $amount);
+  flex-basis: calc( (100% - (($amount - 1) * $gap) ) / $amount);
 }

@@ -1,14 +1,18 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding: 60px 0;
+  
+  @media screen and (min-width: 1200px){
+    padding: 94px 0;
+    }
 
-    &__title {
+
+  &__title {
       color: var(--secondary-text-color);
       font-weight: 700;
       font-size: 36px;
       line-height: calc(42 / 36);
       text-align: center;      
-    }
+  }
     /* Приховування логічного заголовку */
     &__title--visually-hidden{
       @extend %visually-hidden;
