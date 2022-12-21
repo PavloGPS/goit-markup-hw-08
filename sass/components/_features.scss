@@ -1,33 +1,44 @@
 /* ===========features start ==============================*/
 .features {
   &__grid {
-    @media screen and (min-width: 768px){
-      // width: 480px;
+    @media screen and (min-width: 768px) {
+      margin: 0;
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
     }
   }
+
   &__item {
-    // flex-basis: calc((100% - 3 * 30px) / 4);
-    @media screen and (min-width: 480px){
-      width:450px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
+      width: auto;
       @include flexbasis(2, 30px);
+      margin: 0;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 1200px) {
       @include flexbasis(4, 30px);
     }
-    
+    // outline: solid 1px red;
+  }
+
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767.998px) {
+      margin-bottom: 30px;
+    }
   }
 }
 .features .thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+
   height: 120px;
   background-color: var(--grey-bg-color);
   border-radius: 4px;
+
   // заголовок тумби
   &__title {
     font-weight: 700;
