@@ -1,16 +1,33 @@
 /* секція постійних клієнтів */
 .customers {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     gap: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 50px;
+    }
   }
   /* картка клієнта */
   .customer-card {
-    // flex-basis: calc(100% - 5 * 30px / 6);
-    @include flexbasis(5,30px);
+    width: auto;
+    @include flexbasis(2, 30px);
+
+    // @media screen and (min-width: 480px) {
+    //   @include flexbasis(2, 30px);
+    // }
+    @media screen and (min-width: 768px) {
+      @include flexbasis(3, 30px);
+      margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      @include flexbasis(6,30px);
+    }
+    // outline: solid 1px red;
   }
+    
   /* посилання на сторінку клієнта */
   .customer-link {
     display: flex;
