@@ -14,13 +14,9 @@
   .customer-card {
     width: auto;
     @include flexbasis(2, 30px);
-
-    // @media screen and (min-width: 480px) {
-    //   @include flexbasis(2, 30px);
-    // }
+    
     @media screen and (min-width: 768px) {
-      @include flexbasis(3, 30px);
-      margin: 0;
+      @include flexbasis(3, 30px);      
     }
     @media screen and (min-width: 1200px) {
       @include flexbasis(6,30px);
