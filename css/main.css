@@ -573,16 +573,61 @@ img {
 .page-bottom {
   padding: 60px 0;
   background-color: var(--second-bg-color);
+  margin: 0 auto;
 }
 
-.page-bottom .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  gap: 92px;
+@media screen and (min-width: 768px) {
+  .page-bottom .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-column-gap: 165px;
+       -moz-column-gap: 165px;
+            column-gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-bottom .container {
+    gap: 92px;
+  }
+}
+
+.contact-box {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767.998px) {
+  .contact-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 232px;
+    text-align: center;
+  }
+}
+
+.social-box {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767.998px) {
+  .social-box {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 232px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-box {
+    margin-left: 165px;
+  }
 }
 
 /* лого в футері , та адресса*/
@@ -677,12 +722,16 @@ img {
 .pb-form-email {
   margin-top: 20px;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+}
+@media screen and (min-width: 768px) {
+  .pb-form-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .pb-email-input {
