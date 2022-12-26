@@ -2,50 +2,44 @@
 .page-bottom {
     padding: 60px 0;
     background-color: var(--second-bg-color);
-    margin: 0 auto;
+    margin: 0 auto;    
   }
   .page-bottom .container {
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      column-gap: 165px;
-      // row-gap: 60px;     
+      column-gap: 165px;      
     }
     @media screen and (min-width: 1200px) {
       gap: 92px;     
     }    
   }
   .contact-box{
-    margin-bottom: 60px;
-    
+    @media screen and (max-width:1199.998px) {
+        margin-bottom: 60px;   
+        text-align: center;
+      }    
     @media screen and(max-width: 767.998px) {
       margin-left: auto;
       margin-right: auto;  
-      margin-left: auto;
-        margin-right: auto;
-        max-width: 232px;
-        text-align: center;
+      
+      max-width: 232px;      
     }
-    // @media screen and(min-width: 768px) and (max-width:1199.998px) {
-    //   // margin-left: 165px;      
-    //   // gap: 165px;      
-    // }
+    @media screen and(min-width: 768px) and (max-width:1199.998px) {
+      margin-left: 76px;      
+    }
   }
   .social-box{
-    margin-bottom: 60px;
-
-  @media screen and(max-width: 767.998px) {
+    @media screen and (max-width:1199.998px) {        
+        text-align: center;
+      }
+    @media screen and(max-width: 767.998px) {
       margin-left: auto;
       margin-right: auto;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 232px;
-      text-align: center;
-    }
-    @media screen and(min-width: 768px) {
-      margin-left: 165px;      
-    }
+      max-width: 206px;
+      margin-bottom: 60px;
+    }    
   }
   /* лого в футері , та адресса*/
   .logo-light,
@@ -62,8 +56,7 @@
   }
   .page-bottom > .superscription {
     width: 231px;
-  }
-  
+  }  
   /* пошта й номер */
   .superscription .contact.link {
     color: var(--glassy-white-text);
@@ -71,8 +64,7 @@
   /* анімація зміни кольору посилань в блоці контактів в футері   */
   .superscription .link {
     transition: color 250ms var(--timing-function);
-  }
-  
+  }  
   .direction:hover,
   .page-bottom .contact:hover,
   .direction:focus,
@@ -90,10 +82,10 @@
     line-height: calc(16 / 14);
     text-transform: uppercase;
     color: var(--light-text-color);
-  }
-  
+  }  
   .bottom-s-links {
     display: flex;
+    justify-content: center;
     margin-top: 20px;
     gap: 10px;
   }
@@ -121,11 +113,23 @@
   }
   
   /* форма підписки на розсилку */
-  
+    .page-bottom-form{
+      @media screen and (max-width:1199.998px) {
+        margin: 0 auto;
+        justify-content: center;
+      }      
+    }
+    .pb-form-label{
+      @media screen and( max-width:1199.998px ) {      
+      text-align: center;
+     } 
+    }
   .pb-form-email {
     margin-top: 20px;
-    height: 50px;
-   
+    min-height: 50px;
+    display: block;
+    width: 100%;
+    text-align: center;
     
     @media screen and(min-width:768px) {
       display: flex;
@@ -135,7 +139,7 @@
   
   .pb-email-input {
     height: 50px;
-    min-width: 358px;
+    width: calc(100% - 30px);
     padding-left: 16px;
   
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -145,6 +149,9 @@
     color: var(--light-text-color);
   
     background-color: rgba(33, 150, 243, 0);
+    @media screen and (min-width: 388px) {
+      min-width: 358px;
+    }
   }
   
   .pb-submit-btn {
@@ -155,7 +162,12 @@
     min-width: 200px;
     padding: 10px 28px;
     margin-top: 0;
-    margin-left: 12px;
+    @media screen and (max-width:767.998px){
+      margin: 20px auto 0 ;
+      text-align: center;
+    }
+    @media screen and (min-width:768px)
+    {margin-left: 12px;}
   }
   .pb-submit-icon {
     margin-left: 10px;
