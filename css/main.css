@@ -385,7 +385,13 @@ img {
 }
 
 .work {
+  display: none;
   /* Секція Робота або спектр послуг*/
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 .work__section {
   padding-top: 0;
