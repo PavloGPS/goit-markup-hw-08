@@ -1,38 +1,91 @@
 /* секція герой */
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 0;    
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
+    @media screen and(min-width:1200px) {
+      padding: 200px 0;
+    }
     /* background-color: var(--second-bg-color); */
     background-color: var(--hero-bg-color);
     
   
-    background-image: linear-gradient(
-        to right,
-        var(--overlay-bg-color),
-        var(--overlay-bg-color)
-      ),
-      url("../images/hero-bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    // background-image: linear-gradient(
+    //     to right,
+    //     var(--overlay-bg-color),
+    //     var(--overlay-bg-color)
+    //   ),
+    //   url("../images/hero-bg.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+      background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // mobile screen
+        background-image: linear-gradient(to right,
+            var(--overlay-bg-color),
+            var(--overlay-bg-color)), url(../images/hero/mob/bg-480.jpg);
+      
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: linear-gradient(to right,
+            var(--overlay-bg-color),
+            var(--overlay-bg-color)),url(../images/hero/mob/bg-960.jpg);
+        }
+      
+        // tablet screen
+        @media screen and (min-width: 481px) {
+          background-image: linear-gradient(to right,
+            var(--overlay-bg-color),
+            var(--overlay-bg-color)),url(../images/hero/tablet/bg-768.jpg);
+      
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+            var(--overlay-bg-color),
+            var(--overlay-bg-color)),url(../images/hero/tablet/bg-1536.jpg);
+          }
+        }
+      
+        // desktop screen
+        @media screen and (min-width: 769px) {
+          background-image: linear-gradient(to right,
+            var(--overlay-bg-color),
+            var(--overlay-bg-color)),url(../images/hero/desktop/bg-1600.jpg);
+      
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right,
+            var(--overlay-bg-color),
+            var(--overlay-bg-color)),url(../images/hero/desktop/bg-3200.jpg);
+          }
+        }
   }
   /* заголовок секції героя */
   .hero-title {
     color: var(--hero-text-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    font-size: 26px;
+    line-height: calc(42 / 26);
     /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
   
-    max-width: 696px;
+    max-width: 360px;
     margin-right: auto;
     margin-left: auto;
+    @media screen and(min-width:1200px) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+  }
+
   }
   /* кнопка секції героя */
   .hero-btn,
