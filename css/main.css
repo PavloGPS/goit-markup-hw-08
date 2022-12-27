@@ -262,32 +262,73 @@ img {
 /* секція герой */
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
   /* background-color: var(--second-bg-color); */
   background-color: var(--hero-bg-color);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url("../images/hero-bg.jpg");
-  background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url("../images/hero-bg.jpg");
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/mob/bg-480.jpg);
+  background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/mob/bg-480.jpg);
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/mob/bg-960.jpg);
+    background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/mob/bg-960.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/tablet/bg-768.jpg);
+    background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/tablet/bg-768.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/tablet/bg-1536.jpg);
+    background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/tablet/bg-1536.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/desktop/bg-1600.jpg);
+    background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/desktop/bg-1600.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/desktop/bg-3200.jpg);
+    background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/desktop/bg-3200.jpg);
+  }
 }
 
 /* заголовок секції героя */
 .hero-title {
   color: var(--hero-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  max-width: 696px;
+  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 
 /* кнопка секції героя */
@@ -378,6 +419,11 @@ img {
   margin-top: 30px;
   color: var(--secondary-text-color);
 }
+@media screen and (max-width: 767.998px) {
+  .features .thumb__title {
+    text-align: center;
+  }
+}
 .features .thumb__text {
   font-size: 14px;
   line-height: 1.7142857143;
@@ -430,6 +476,7 @@ img {
 /* секція команда */
 /* фон секції */
 .teammates {
+  display: none;
   /* картка члена команди */
   /* заголовок картки та її текст*/
 }
