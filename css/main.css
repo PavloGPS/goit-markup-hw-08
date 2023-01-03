@@ -23,6 +23,7 @@
   --form-icon-color: #212121;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --form-fild-border: #21212133;
+  --menu-butons: #212121;
 }
 
 /* Приховування логічного заголовку */
@@ -140,6 +141,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 80px;
+}
+@media screen and (max-width: 767px) {
+  .page-header .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-height: 60px;
+  }
 }
 
 .navigation {
@@ -158,10 +168,20 @@ img {
   margin-left: 93px;
   /* gap: 50px; */
 }
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
 
-.contact.list .item:not(:last-child),
 .site-nav.list .item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact.list .item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 /* стилі логотипу компанії */
@@ -190,39 +210,71 @@ img {
 .site-nav.list .link,
 .contact.list .link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
 }
 
-.site-nav .link:hover,
+.site-nav.list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.1428571429;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav.list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contact.list .link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  line-height: 1.1666666667;
+}
+@media screen and (min-width: 1200px) {
+  .contact.list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav .link:hover,
 .site-nav .link:focus,
 .contact .link:hover,
-.contact .link:focus,
+.contact .link:focus {
+    color: var(--accent-color);
+  }
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
-
-.site-nav .link.current {
-  position: relative;
+@media screen and (min-width: 768px) {
+  .site-nav .link.current {
+    position: relative;
+  }
 }
 
-.site-nav .link.current::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  -webkit-transform: translatey(1px);
-          transform: translatey(1px);
-  content: "";
-  height: 4px;
-  width: 100%;
-  display: block;
-  border-radius: 2px;
-  background-color: var(--accent-color);
+@media screen and (min-width: 768px) {
+  .site-nav .link.current::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: translatey(1px);
+            transform: translatey(1px);
+    content: "";
+    height: 4px;
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
 }
 
 /* .navigation .link,*/
@@ -231,11 +283,32 @@ img {
 }
 
 .contact.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
   /* gap: 50px; */
+}
+@media screen and (min-width: 768px) {
+  .contact.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 767.998px) {
+  .contact.list {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact.list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .site-nav .link {
@@ -251,12 +324,36 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contact.list .link {
+    gap: 10px;
+  }
 }
 
-.icon.mail,
+.icon.mail {
+  fill: currentColor;
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .icon.mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .icon.phone {
   fill: currentColor;
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .icon.phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 /* секція герой */
@@ -1299,4 +1396,167 @@ img {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle__icon {
+  color: var(--secondary-text-color);
+  fill: currentColor;
+}
+.menu-toggle__icon:hover, .menu-toggle__icon:focus {
+  color: var(--accent-color);
+}
+
+.menu-container {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--main-bg-color);
+  z-index: 999;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms var(--timing-function);
+  transition: -webkit-transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: var(--secondary-text-color);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  display: block;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 47px;
+}
+.mobile-menu__link--current {
+  color: var(--accent-color);
+}
+
+.mobile-contacts {
+  padding: 0;
+  margin-top: auto;
+}
+.mobile-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+  margin-right: -40px;
+}
+.mobile-contacts__phone {
+  font-size: 34px;
+  line-height: 1.3333333333;
+  color: var(--accent-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: auto;
+}
+.mobile-contacts__mail {
+  font-size: 24px;
+  line-height: 1.1666666667;
+}
+
+.socials-string {
+  /* блок посиланнь на соц мережі*/
+  /* посилання в картці команди*/
+}
+.socials-string__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 64px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 437.98px) {
+  .socials-string__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (max-width: 359.98px) {
+  .socials-string__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+    -ms-flex-preferred-size: calc((100% - 20px) / 2);
+        flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (max-width: 359.98px) {
+  .socials-string__row :nth-child(2) {
+    border: 0;
+  }
+}
+.socials-string__link {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-transform: capitalize;
+  color: var(--accent-color);
+}
+.socials-string__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.socials-string__item:not(:first-child) {
+  padding-left: 10px;
 }/*# sourceMappingURL=main.css.map */
