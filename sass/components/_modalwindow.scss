@@ -174,7 +174,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
+
+    @media screen and(min-width: 1200px) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+      }
   
     color: var(--dark-text-color);
   
@@ -203,12 +209,16 @@
   }
   
   .checkbox-icon {
-    display: inline-block;
+    display: block;
     top: 50%;
-    left: 4px;
+    left: 0;
+    @media screen and (min-width: 1200px) {
+        left: 4px;
+      }
   
     width: 16px;
     height: 15px;
+    margin-right: 8px;
   
     background: transparent;
   
@@ -230,24 +240,32 @@
     display: flex;
     position: relative;
     align-items: center;
-    justify-content: center;
+    // justify-content: flex-start;
+    @media screen and (min-width: 1200px) {
+      justify-content: center;      
+    }
   
     margin-top: 20px;
-    gap: 7px;
+    
   }
   
   .agreement-text-box {
+    display: block;
     user-select: none;
   
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
   
     letter-spacing: 0.03em;
   
     color: var(--primary-text-color);
+    @media screen and(min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      }
   }
   
   .agreement-link {

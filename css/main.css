@@ -1289,12 +1289,19 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.1428571429;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: var(--dark-text-color);
   border: 1px solid var(--form-fild-border);
   border-radius: 4px;
   -webkit-transition: border-color 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function);
+}
+@media screen and (min-width: 1200px) {
+  .form-message {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.01em;
+  }
 }
 
 .form-input:hover ~ .form-icon,
@@ -1316,11 +1323,12 @@ img {
 }
 
 .checkbox-icon {
-  display: inline-block;
+  display: block;
   top: 50%;
-  left: 4px;
+  left: 0;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
   background: transparent;
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
@@ -1328,6 +1336,11 @@ img {
   -webkit-transition: border-color 250ms var(--timing-function), background-color 250ms var(--timing-function);
   transition: border-color 250ms var(--timing-function), background-color 250ms var(--timing-function);
   cursor: pointer;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-icon {
+    left: 4px;
+  }
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -1344,14 +1357,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 20px;
-  gap: 7px;
+}
+@media screen and (min-width: 1200px) {
+  .agreement {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .agreement-text-box {
+  display: block;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1359,10 +1376,16 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .agreement-text-box {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .agreement-link {
@@ -1512,7 +1535,7 @@ img {
 }
 
 .socials-string {
-  /* блок посиланнь на соц мережі*/
+  /* рядок посиланнь на соц мережі */
   /* посилання в картці команди*/
 }
 .socials-string__row {
@@ -1543,8 +1566,8 @@ img {
   }
 }
 @media screen and (max-width: 359.98px) {
-  .socials-string__row :nth-child(2) {
-    border: 0;
+  .socials-string__item:nth-child(2) {
+    border: none;
   }
 }
 .socials-string__link {
