@@ -573,31 +573,66 @@ img {
 /* секція команда */
 /* фон секції */
 .teammates {
-  display: none;
   /* картка члена команди */
   /* заголовок картки та її текст*/
 }
 .teammates__section {
   background-color: var(--grey-bg-color);
 }
-.teammates__grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .teammates__grid {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teammates__grid {
+    margin-top: 50px;
+  }
 }
 .teammates__card {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  max-width: 100%;
   text-align: center;
   background-color: var(--main-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 767.998px) {
+  .teammates__card {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .teammates__card {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teammates__card {
+    width: auto;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .teammates__card {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .teammates__card-bottom {
-  padding: 30px 0;
+  padding: 30px 0 24px;
+}
+@media screen and (min-width: 1200px) {
+  .teammates__card-bottom {
+    padding-bottom: 30px;
+  }
 }
 .teammates__title {
   color: var(--secondary-text-color);
@@ -1536,7 +1571,7 @@ img {
 
 .socials-string {
   /* рядок посиланнь на соц мережі */
-  /* посилання в картці команди*/
+  /* посилання на соц мережі*/
 }
 .socials-string__row {
   display: -webkit-box;
@@ -1561,13 +1596,9 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 20px;
-    -ms-flex-preferred-size: calc((100% - 20px) / 2);
-        flex-basis: calc((100% - 20px) / 2);
-  }
-}
-@media screen and (max-width: 359.98px) {
-  .socials-string__item:nth-child(2) {
-    border: none;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 .socials-string__link {
