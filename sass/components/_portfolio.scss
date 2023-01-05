@@ -2,8 +2,10 @@
 /* кнопки фільтрів */
 .filters.list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 8px;
+
   }
   .portfolio .btn {
     background-color: var(--filter-btn-color);
@@ -33,19 +35,54 @@
   }
   /* картки портфоліо */
   .cards.list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 50px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+    // margin-top: 50px;
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;        
+        gap: 30px;        
+      }
+    
+      @media screen and (min-width: 1200px) {
+        margin-top: 50px;
+      }
   }
   /* фон картки */
   .portfolio .list-item {
-    flex-basis: calc((100% - 2 * 30px) / 3);
-    /* @include flexbasis(2,30px); */
+    
     background-color: var(--main-bg-color);
   
     transition: box-shadow 250ms var(--timing-function);
     box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    & a{
+      display: flex;
+      flex-direction: column;
+
+    }
+    
+    @media screen and (max-width: 767.998px) {
+        margin-top: 30px;
+      }
+    
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: auto;
+        @include flexbasis(2, 30px);        
+      }
+    
+      @media screen and (min-width: 1200px) {
+        @include flexbasis(3, 30px);
+      }
+    
+      // outline: solid 1px red;
   }
   .img-wraper {
     position: relative;
@@ -80,9 +117,11 @@
     /* max-width: 100%; */
     max-height: 100%;
     overflow: auto;
+    flex-grow: 1;
   }
   /* заголовок картки портфоліо */
   .portfolio .card-title {
+    
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36 / 18);
@@ -92,6 +131,7 @@
   }
   /* текст картки портфоліо */
   .portfolio .card-text {
+    
     font-size: 16px;
     line-height: calc(30 / 16);
   
@@ -102,6 +142,9 @@
     border-right: 1px solid var(--card-border-color);
     border-bottom: 1px solid var(--card-border-color);
     border-left: 1px solid var(--card-border-color);
+
+    flex-grow: 1;
+    
   }
   .cards > .list-item:hover,
   .cards .link:hover,

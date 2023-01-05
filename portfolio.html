@@ -56,13 +56,25 @@
             >
           </li>
         </ul>
+        <!--кнопка бургер -->
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <section class="section portfolio">
         <!-- спектр послуг -->
         <div class="container">
-          <h1 class="section__title section__title--visually-hidden">Портфоліо</h1>
+          <h1 class="section__title section__title--visually-hidden">
+            Портфоліо
+          </h1>
           <ul class="filters list">
             <li><button class="btn" type="button">Усі</button></li>
             <li><button class="btn" type="button">Веб-сайти</button></li>
@@ -83,10 +95,23 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-1.jpg     450w,
+                      ./images/portfolio/mob/img-900-1.jpg     900w,
+                      ./images/portfolio/tablet/img-354-1.jpg  354w,
+                      ./images/portfolio/tablet/img-708-1.jpg  708w,
+                      ./images/portfolio/desktop/img-370-1.jpg 370w,
+                      ./images/portfolio/desktop/img-740-1.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-1.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Макбук з відкритим сайтом"
+                  />
+                  <!-- <img
                     src="./images/imgproject1.jpg"
                     alt="Макбук з відкритим сайтом"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">Технокряк</h2>
@@ -106,10 +131,23 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-2.jpg     450w,
+                      ./images/portfolio/mob/img-900-2.jpg     900w,
+                      ./images/portfolio/tablet/img-354-2.jpg  354w,
+                      ./images/portfolio/tablet/img-708-2.jpg  708w,
+                      ./images/portfolio/desktop/img-370-2.jpg 370w,
+                      ./images/portfolio/desktop/img-740-2.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-2.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Баскетболісти змагаються за м'яч"
+                  />
+                  <!-- <img
                     src="./images/imgproject2.jpg"
                     alt="Баскетболісти змагаються за м'яч"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">
@@ -132,10 +170,23 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-3.jpg     450w,
+                      ./images/portfolio/mob/img-900-3.jpg     900w,
+                      ./images/portfolio/tablet/img-354-3.jpg  354w,
+                      ./images/portfolio/tablet/img-708-3.jpg  708w,
+                      ./images/portfolio/desktop/img-370-3.jpg 370w,
+                      ./images/portfolio/desktop/img-740-3.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-3.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Логотип ресторану морської їжі та риба"
+                  />
+                  <!-- <img
                     src="./images/imgproject3.jpg"
                     alt="Логотип ресторану морської їжі та риба"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">
@@ -158,10 +209,23 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-4.jpg     450w,
+                      ./images/portfolio/mob/img-900-4.jpg     900w,
+                      ./images/portfolio/tablet/img-354-4.jpg  354w,
+                      ./images/portfolio/tablet/img-708-4.jpg  708w,
+                      ./images/portfolio/desktop/img-370-4.jpg 370w,
+                      ./images/portfolio/desktop/img-740-4.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-4.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Навушники"
+                  />
+                  <!-- <img
                     src="./images/imgproject4.jpg"
                     alt="Навушники"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">
@@ -184,10 +248,23 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-5.jpg     450w,
+                      ./images/portfolio/mob/img-900-5.jpg     900w,
+                      ./images/portfolio/tablet/img-354-5.jpg  354w,
+                      ./images/portfolio/tablet/img-708-5.jpg  708w,
+                      ./images/portfolio/desktop/img-370-5.jpg 370w,
+                      ./images/portfolio/desktop/img-740-5.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-5.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Дві різні коробки"
+                  />
+                  <!-- <img
                     src="./images/imgproject5.jpg"
                     alt="Дві різні коробки"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">
@@ -210,10 +287,24 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-6.jpg     450w,
+                      ./images/portfolio/mob/img-900-6.jpg     900w,
+                      ./images/portfolio/tablet/img-354-6.jpg  354w,
+                      ./images/portfolio/tablet/img-708-6.jpg  708w,
+                      ./images/portfolio/desktop/img-370-6.jpg 370w,
+                      ./images/portfolio/desktop/img-740-6.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-6.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Веб-сайт на дисплеї"
+                  />
+
+                  <!-- <img
                     src="./images/imgproject6.jpg"
                     alt="Веб-сайт на дисплеї"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title" lang="en">
@@ -235,10 +326,24 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-7.jpg     450w,
+                      ./images/portfolio/mob/img-900-7.jpg     900w,
+                      ./images/portfolio/tablet/img-354-7.jpg  354w,
+                      ./images/portfolio/tablet/img-708-7.jpg  708w,
+                      ./images/portfolio/desktop/img-370-7.jpg 370w,
+                      ./images/portfolio/desktop/img-740-7.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-7.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Відкритий глянцевий журнал"
+                  />
+
+                  <!-- <img
                     src="./images/imgproject7.jpg"
                     alt="Відкритий глянцевий журнал"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">
@@ -261,10 +366,24 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-8.jpg     450w,
+                      ./images/portfolio/mob/img-900-8.jpg     900w,
+                      ./images/portfolio/tablet/img-354-8.jpg  354w,
+                      ./images/portfolio/tablet/img-708-8.jpg  708w,
+                      ./images/portfolio/desktop/img-370-8.jpg 370w,
+                      ./images/portfolio/desktop/img-740-8.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-8.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Біла бірка на мотузковій петлі з написом LAB EL TAG PSD Mockup"
+                  />
+
+                  <!-- <img
                     src="./images/imgproject8.jpg"
                     alt="Біла бірка на мотузковій петлі з написом LAB EL TAG PSD Mockup"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title">
@@ -287,10 +406,24 @@
                     </p>
                   </div>
                   <img
+                    srcset="
+                      ./images/portfolio/mob/img-450-9.jpg     450w,
+                      ./images/portfolio/mob/img-900-9.jpg     900w,
+                      ./images/portfolio/tablet/img-354-9.jpg  354w,
+                      ./images/portfolio/tablet/img-708-9.jpg  708w,
+                      ./images/portfolio/desktop/img-370-9.jpg 370w,
+                      ./images/portfolio/desktop/img-740-9.jpg 740w
+                    "
+                    src="./images/portfolio/mob/img-450-9.jpg"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    alt="Папери, окуляри, смартфон, руки чоловіка на клавіатурі ноутбука з відкритим додатком"
+                  />
+
+                  <!-- <img
                     src="./images/imgproject9.jpg"
                     alt="Папери, окуляри, смартфон, руки чоловіка на клавіатурі ноутбука з відкритим додатком"
                     width="370"
-                  />
+                  /> -->
                 </div>
                 <div class="text-content">
                   <h2 class="card-title" lang="en">Growing Business</h2>
@@ -367,19 +500,99 @@
             </li>
           </ul>
         </div>
-         <!-- форма підписки на розсилку -->
-         <div class="page-bottom-form">
+        <!-- форма підписки на розсилку -->
+        <div class="page-bottom-form">
           <p class="pb-form-label"><strong>Підпишіться на розсилку</strong></p>
-          <form class="pb-form-email">            
-              <label>
-                <input type="email" class="pb-email-input" name="email" placeholder="E-mail">
-              </label>            
-              <button class="pb-submit-btn" type="submit">Підписатися<svg class="pb-submit-icon" width="24" height="24">
+          <form class="pb-form-email">
+            <label>
+              <input
+                type="email"
+                class="pb-email-input"
+                name="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="pb-submit-btn" type="submit">
+              Підписатися<svg class="pb-submit-icon" width="24" height="24">
                 <use href="./images/icons.svg#pb-submit"></use>
-              </svg></button>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <!-- мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#m-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__link--current link"
+            href="./index.html"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="./portfolio.html"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts__item">
+          <a class="mobile-contacts__phone link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a
+            class="mobile-contacts__mail link"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <div class="socials-string">
+        <ul class="socials-string__row list">
+          <li class="socials-string__item">
+            <a class="socials-string__link link" href="#" aria-label="instagram"
+              >instagram</a
+            >
+          </li>
+          <li class="socials-string__item">
+            <a class="socials-string__link link" href="#" aria-label="twitter"
+              >twitter</a
+            >
+          </li>
+          <li class="socials-string__item">
+            <a class="socials-string__link link" href="#" aria-label="facebook"
+              >facebook</a
+            >
+          </li>
+          <li class="socials-string__item">
+            <a class="socials-string__link link" href="#" aria-label="linkedin"
+              >linkedin</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- скрипти для мобільного меню -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

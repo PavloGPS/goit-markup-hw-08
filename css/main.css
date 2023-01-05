@@ -72,6 +72,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* скидання стилів списку по замовчуванню */
@@ -1002,6 +1004,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1039,21 +1043,25 @@ img {
 }
 
 /* картки портфоліо */
-.cards.list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
+@media screen and (min-width: 768px) {
+  .cards.list {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cards.list {
+    margin-top: 50px;
+  }
 }
 
 /* фон картки */
 .portfolio .list-item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-  /* @include flexbasis(2,30px); */
   background-color: var(--main-bg-color);
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
@@ -1061,6 +1069,45 @@ img {
   transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
   -webkit-box-shadow: none;
           box-shadow: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.portfolio .list-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media screen and (max-width: 767.998px) {
+  .portfolio .list-item {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .portfolio .list-item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio .list-item {
+    width: auto;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio .list-item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .img-wraper {
@@ -1101,6 +1148,9 @@ img {
   /* max-width: 100%; */
   max-height: 100%;
   overflow: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /* заголовок картки портфоліо */
@@ -1124,6 +1174,9 @@ img {
   border-right: 1px solid var(--card-border-color);
   border-bottom: 1px solid var(--card-border-color);
   border-left: 1px solid var(--card-border-color);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .cards > .list-item:hover,
