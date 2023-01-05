@@ -1,34 +1,32 @@
 :root {
-    --overlay-bg-color: rgba(47, 48, 58, 0.4);
-    --hero-bg-color: #c4c4c4;
-  
-    --accent-color: #2196f3;
-    --dark-text-color: #000;
-    --light-text-color: #fff;
-    --primary-text-color: #757575;
-    --secondary-text-color: #212121;
-    --hero-text-color: #fff;;
-    --glassy-white-text: rgba(255, 255, 255, 0.6);
-    --main-bg-color: #fff;
-    --second-bg-color: #2f303a;
-    --grey-bg-color: #f5f4fa;
-    --order-btn-color: #2196f3;
-    --active-btn-color: #188ce8;
-    --filter-btn-color: #f5f4fa;
-    --header-underline-color: #ececec;
-    --card-border-color: #eee;
-    //icons
-    --s-icons-color: #afb1b8;
-    --light-s-icon-color: #fff;
-    --dark-bg-icon-color: rgba(255, 255, 255, 0.1);
-    --form-icon-color: #212121;
-    // --form-active-icon-color: #2196f3;
-  
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    // forms 
-    --form-fild-border: #21212133;
-    // burger and cross
-    --menu-butons: #212121;
+  --overlay-bg-color: rgba(47, 48, 58, 0.4);
+  --hero-bg-color: #c4c4c4;
 
-  }
-  
+  --accent-color: #2196f3;
+  --dark-text-color: #000;
+  --light-text-color: #fff;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --hero-text-color: #fff;
+  --glassy-white-text: rgba(255, 255, 255, 0.6);
+  --main-bg-color: #fff;
+  --second-bg-color: #2f303a;
+  --grey-bg-color: #f5f4fa;
+  --order-btn-color: #2196f3;
+  --active-btn-color: #188ce8;
+  --filter-btn-color: #f5f4fa;
+  --header-underline-color: #ececec;
+  --card-border-color: #eee;
+  //icons
+  --s-icons-color: #afb1b8;
+  --light-s-icon-color: #fff;
+  --dark-bg-icon-color: rgba(255, 255, 255, 0.1);
+  --form-icon-color: #212121;
+  // --form-active-icon-color: #2196f3;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  // forms
+  --form-fild-border: #21212133;
+  // burger and cross
+  --menu-butons: #212121;
+}
