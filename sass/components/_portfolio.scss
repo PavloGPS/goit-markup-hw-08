@@ -33,12 +33,12 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
   }
+    .filters.list(:last-child) {
+      @media screen and (max-width: 769)padding: 6px 25px;
+    }
   /* картки портфоліо */
   .cards.list {
-    // display: flex;
-    // flex-wrap: wrap;
-    // gap: 30px;
-    // margin-top: 50px;
+    
     @media screen and (min-width: 768px) {
         margin-top: 30px;
         display: flex;
@@ -59,9 +59,10 @@
     box-shadow: none;
     display: flex;
     flex-direction: column;
-    & a{
+    & .link{
       display: flex;
       flex-direction: column;
+      height:100%;
 
     }
     
@@ -114,10 +115,10 @@
     padding-left: 24px;
     padding-right: 24px;
   
-    /* max-width: 100%; */
+    
     max-height: 100%;
     overflow: auto;
-    flex-grow: 1;
+    
   }
   /* заголовок картки портфоліо */
   .portfolio .card-title {
