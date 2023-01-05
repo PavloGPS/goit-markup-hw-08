@@ -1623,7 +1623,7 @@ img {
 }
 @media screen and (max-width: 350px) {
   .mobile-contacts__phone {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 .mobile-contacts__mail {
@@ -1696,7 +1696,7 @@ img {
     padding-left: 5px;
   }
 }
-@media screen and (max-width: 359.98px) {
+@media screen and (max-width: 266px) {
   .socials-string__item:nth-child(2) {
     border-right: none;
   }

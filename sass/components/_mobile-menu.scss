@@ -98,7 +98,7 @@
         justify-content: center;
         margin-top: auto;
     @media screen and(max-width: 350px){
-        font-size: 24px;
+        font-size: 22px;
         }
     }
 
@@ -158,7 +158,7 @@
             }
         }   
     &__item:nth-child(2) {
-            @media screen and (max-width:359.98px) {
+            @media screen and (max-width:266px) {
                 border-right: none;
             }
         }
