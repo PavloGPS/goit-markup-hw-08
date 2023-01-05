@@ -50,6 +50,9 @@
           width: 528px;
           height: 581px;
         }
+    @media screen and(max-width: 290px) {
+          padding: 25px;
+        }
   }
   .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.8);
