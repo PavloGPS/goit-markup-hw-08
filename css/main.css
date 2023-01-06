@@ -996,17 +996,16 @@ img {
       flex-wrap: wrap;
   gap: 8px;
 }
+@media screen and (min-width: 250px) and (max-width: 767.998px) {
+  .filters.list {
+    max-width: 435px;
+  }
+}
 @media screen and (min-width: 768px) {
   .filters.list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-
-@media screen and (min-width: 250px) and (max-width: 767.998px) {
-  .filters__item:first-child .btn, .filters__item:last-child .btn {
-    padding: 6px 30px;
   }
 }
 
