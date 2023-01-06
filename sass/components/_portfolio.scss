@@ -4,19 +4,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  @media screen and (min-width: 250px) and (max-width: 767.998px) {
+      max-width: 435px;
+      }
 
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
 }
-.filters__item {
-  &:first-child .btn,
-  &:last-child .btn {
-    @media screen and (min-width: 250px) and (max-width: 767.998px) {
-      padding: 6px 30px;
-      }
-  }
-}
+// .filters__item {
+//   &:first-child .btn,
+//   &:last-child .btn {
+//     @media screen and (min-width: 250px) and (max-width: 767.998px) {
+//       padding: 6px 30px;
+//       }
+//   }
+// }
 .portfolio .btn {
   background-color: var(--filter-btn-color);
   color: var(--secondary-text-color);
