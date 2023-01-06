@@ -384,25 +384,25 @@ img {
     background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/mob/bg-960.jpg);
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/tablet/bg-768.jpg);
     background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/tablet/bg-768.jpg);
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/tablet/bg-1536.jpg);
     background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/tablet/bg-1536.jpg);
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/desktop/bg-1600.jpg);
     background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/desktop/bg-1600.jpg);
   }
 }
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--overlay-bg-color)), to(var(--overlay-bg-color))), url(../images/hero/desktop/bg-3200.jpg);
     background-image: linear-gradient(to right, var(--overlay-bg-color), var(--overlay-bg-color)), url(../images/hero/desktop/bg-3200.jpg);
